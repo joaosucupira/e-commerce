@@ -1,0 +1,25 @@
+.texto-geral {
+    padding: 70px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.grade-produtos {
+    display:flex;
+    justify-content: center;
+    
+}
+
+.grade-produtos img{
+    width: 200px;
+    margin:50px
+
+}
+
+.grade-produtos p{
+    font-size: 32px;
+    margin-top: 2.5px;
+    margin-left:90px;
+    margin-right:90px;
+}
