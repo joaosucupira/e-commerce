@@ -1,203 +1,123 @@
-body, html {
-    margin: 0;
-    padding: 0;
+/* CONFIGURAÇÕES BÁSICAS */
 
-    background: linear-gradient(360deg, #1affbb, #8fffdf, #ffc4b0, #000000); 
-  }
-
-.img-topo {
-    background-image: url('img/fundo2.png');
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    position: absolute;
+body {
     display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.store-logo {
-    display:flex; 
-    float:left; 
-    width:300px; 
-    height:100px; 
-    background-color:aliceblue; 
-    position:absolute; 
-    left:100px; 
-    top:40px
-}
-
-.simple-bar{
-    display: flex;
-    background-color: #000000;
-    margin-top: 157px;
-    margin-bottom: 30px;
-    height: 540px;
-    position: relative;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    
 }
 
-.search-bar{
+.linha {
     display: flex;
-    height: 30px;
-    position: relative;
-    width: 30%;
-    border: 3px solid rgb(0, 0, 0);
-    box-shadow: 0 3px 1px rgba(0,0,0,1); 
-    margin:30px;
+    flex-direction: row;
 }
 
-.search-input {
-    background-color:#ffc4b0;
-    flex: 1;
-    border: none;
-    padding: 0 10px;
-    font-size: 14px;
-    border-radius: 10px;
-
-  }
-
-.lupa {
+.coluna {
     display: flex;
-    background-color: #1affbb;
-    padding: 0;
-    height: 35px;
-    width: 35px;
-    position: relative;
-    border-radius: 100%;
-    margin-right: 30px;
-    border: 3px solid #000000;
-    cursor: pointer;
-
+    flex-direction: column;
 }
 
-.menu_bar {
-    align-items: center;
+.caixa {
+    display: flex;
+    border: 1px solid black;
+}
+
+.mid {
+    width: 50vw;
+}
+
+.side {
+    width: 23.5vw;
+}
+
+.short {
+    height: 10vw;
+}
+
+.average {
+    height: 20vw;
+}
+
+.tall {
+    height: 30vw;
+}
+
+.centro {
     justify-content: center;
+    align-items: center;
+}
+
+.esquerda {
+    justify-content: start;
+    align-items: center;
+}
+
+.direita {
+    justify-content: end;
+    align-items: center;
+}
+
+.circulo {
     display: flex;
-    border: 4px solid black;
-    background-color: white;
-    max-width: 900px;
-    height: 60px;
-    margin-top: 40px;
-    margin: 40px auto;
-    margin-top: 37px;
+    height: 4vw;
+    width: 4vw;
+    border: 2px solid black;
+    border-radius: 15vw;
+    margin: 5px;
+}
+
+/* CONFIGURACOES ESPECIFICAS */
+
+.hub-bar {
+    width:7vw; height:18svw; background-color:gray; margin:10px; margin-right:0;
+}
+
+.hub-screen {
+    width:40vw; height:18svw; background-color:black; margin: 10px; border-top-right-radius:5vw;border-bottom-right-radius:5vw; margin-left:0
+}
+
+.btn-buscar {
+    width:6vw; height:4vw; background-color: black;
+}
+
+.btn-digitar {
+    width:38vw; height:4vw;
+}
+
+.logo-store {
+    width: 17vw; height: 7vw; background-image:url('img/store-logo.png'); background-size:contain;
+}
+
+.tiny-box{
+    width: 10vw; height: 4.5vw;
+}
+
+.produto-slot{
+    width:11vw;height:11vw;
+}
+
+#login-box {
+    display: none;
+    position: fixed;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+#login-box form {
+    text-align: center;
+}
+
+#login-box label, #login-box input, #login-box button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#signup-button {
+    background-color: #3498db;
+    color: #fff;
     padding: 10px;
-    box-shadow: 10px 10px 1px rgba(0,0,0,1); 
-}
-
-.menu_bar h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:bolder;
-    font-style: italic;
-    font-size: 25px;
-    display: inline;
-    margin: 5.5px;
-}
-
-.menu_bar h1 a{
+    border: none;
     cursor: pointer;
-    color: black;
-    text-decoration: none;
-}
-
-
-.menu_bar img {
-    width: 50px;
-    margin-left:20px;
-}
-
-.container-telão {
-    margin-left: 30px;
-    margin-right: 30px;
-    justify-content: center;
-    display: flex;
-    position:relative;
-    height: fit-content;
-}
-
-.telão {
-    display: flex;
-    margin:20px;
-    display: flex;
-    background-size: contain;
-    width: 720px;
-    height: 270px;
-    border-radius: 0px;
-}
-
-.telão:nth-child(1){
-    box-shadow: -20px -20px 1px #1affbb; 
-    background-image:url('img/1x/modelo7.jpeg');
-
-}
-
-.telão:nth-child(2){
-    box-shadow: 20px 20px 1px #ffb49b; 
-    background-image:url('img/1x/modelo9.png');
-    background-size: 110% 120%;
-    background-position: -30px -30px;
-}
-
-.destaques-container {
-    margin-top: -324px;
-}
-
-.destaques {
-    padding: 120px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: flex;
-    text-align: center; 
-    margin: 50px;
-}
-
-.pequena-caixa{
-    background-size:cover;
-    background-position: 50% 50%;
-    display: flex ;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 12px;
-    position: relative;
-    width: 250px;
-    height: 250px;
-    border: 6px solid black;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 28px 1px rgba(0,0,0,1);
-
-}
-
-.grande-caixa{
-    background-size: cover ;
-    background-position: 50%;
-    display: flex;
-    margin: 12px;
-    position: relative;
-    width: 600px;
-    height: 250px;
-    border: 6px solid black;
-    border-radius: 20px;
-    background-color: white;
-    justify-content: flex-end;
-    align-items: flex-end;
-    box-shadow: 0px 28px 1px rgba(0,0,0,1);
-}
-
-
-.img-base {
-    background-image: url('img/fundo2.png');
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }

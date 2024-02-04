@@ -1,0 +1,226 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(360deg, #1affbb, #8fffdf, #ffc4b0); 
+  }
+
+.img-topo {
+    background-image: url('img/fundo2.png');
+    width: 100%;
+    height: 23.1%;
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-logo {
+    display:flex; 
+    width:190px; 
+    height:60px; 
+    background-image: url('img/store-logo.png'); 
+    background-position: 50% 50%;
+    background-size: cover;
+
+    left:100px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 1px rgba(0,0,0,1); 
+}
+
+
+.sp-container {
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:center; 
+    margin-top:-170px; 
+    margin-left:20px; 
+    margin-right:20px;
+}
+
+.simple-bar{
+    display: flex;
+    background-color: #000000;
+    height: 540px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.search-bar{
+    display: flex;
+    height: 30px;
+    position: relative;
+    width: 60%;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 3px 1px rgba(0,0,0,1); 
+    margin:30px;
+    align-items: center;
+}
+
+.opcoes {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #1affbb;
+    margin: 20px;
+    padding:10px;
+}
+
+
+.search-input {
+    background-color:#ffc4b0;
+    flex: 1;
+    border: none;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 0px;
+
+  }
+
+.lupa {
+    display: flex;
+    background-color: #1affbb;
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    border-radius: 100%;
+    margin-right: 30px;
+    border: 3px solid #000000;
+    cursor: pointer;
+
+}
+
+.menu_bar {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    border: 4px solid black;
+    background-color: white;
+    width: 900px;
+    height: 80px;
+    margin-top: 40px;
+    margin: 40px ;
+    margin-top: 37px;
+    padding: 10px;
+    box-shadow: 10px 10px 1px rgba(0,0,0,1); 
+}
+
+.menu_bar h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+    font-style: italic;
+    font-size: 25px;
+    display: inline;
+    margin: 5.5px;
+}
+
+.menu_bar h1 a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+
+.menu_bar img {
+    width: 50px;
+    margin-left:20px;
+}
+
+.container-telão {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    position:relative;
+    height: fit-content;
+    top:40px;
+}
+
+.telão {
+    display: flex;
+    background-size: contain;
+    width: 720px;
+    height: 270px;
+}
+
+.telão:nth-child(1){
+    box-shadow: -20px -20px 1px #1affbb; 
+    background-image:url('img/1x/modelo7.jpeg');
+
+}
+
+.telão:nth-child(2){
+    box-shadow: 20px 20px 1px #ffb49b; 
+    background-image:url('img/1x/modelo9.png');
+    background-size: 110% 120%;
+    background-position: -30px -30px;
+}
+
+.destaques-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.destaques {
+    padding: 120px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    text-align: center; 
+    margin: 50px;
+}
+
+.pequena-caixa{
+    background-size:cover;
+    background-position: 50% 50%;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 12px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 6px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 28px 1px rgba(0,0,0,1);
+
+}
+
+.grande-caixa{
+    background-size: cover ;
+    background-position: 50%;
+    display: flex;
+    margin: 12px;
+    position: relative;
+    width: 600px;
+    height: 250px;
+    border: 6px solid black;
+    border-radius: 20px;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 0px 28px 1px rgba(0,0,0,1);
+}
+
+
+.img-base {
+    background-image: url('img/fundo2.png');
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
