@@ -1,4 +1,8 @@
 .g-3{
     padding: 45px;
-    
+    width: 50vw;
+}
+
+#caixa-form{
+    height: fit-content;
 }

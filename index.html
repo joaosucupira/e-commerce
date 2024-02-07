@@ -7,77 +7,145 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
+<body >
+    
 
-    <div class="linha ">
-        <!-- COLUNA 0 -->
-        <div class="coluna"> 
-            <div class="caixa side short centro">
-                <div class="caixa logo-store"></div>
+    <div class="coluna">
+
+      <!-- LINHA 0 -->
+
+      <div class="linha " style="margin-top: 30px;">
+          <!-- COLUNA 0 -->
+
+          <div class="coluna"> 
+              <div class="caixa side mini centro">
+                  <div class="caixa round-left" style="height: 5vw; width:2vw; background-color:rgb(0, 0, 0)"></div>
+                  <div class="caixa logo-store sombra"></div>
+                  <div class="caixa round-right" style="height: 5vw; width:2vw; background-color:rgb(0, 0, 0)"></div>
+              </div>
+          </div>
+
+          <!-- COLUNA 1 -->
+
+          <div class="coluna">
+              <div class="caixa mid mini centro">
+                  <div class="caixa linha ">
+                      <div class="btn-buscar black-out" style="align-items: center; justify-content:center; display:flex">
+                        <div class="legenda">Buscar</div>
+                      </div>
+                      <div class="caixa btn-digitar"></div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- COLUNA 2 -->
+          <div class="coluna">
+              <div class="caixa side mini">
+                  <div class="caixa linha centro">
+                      <a href="#" id="login-link"><div class="circulo" 
+                        style="background-image: url('img/icon-2.png'); background-size:cover"></div></a>
+                      <div class="circulo"
+                        style="background-image: url('img/icon-3.jpg'); background-size:220%; background-position: 50%">
+                      </div>
+                      <div class="circulo"
+                      style="background-image: url('img/icon-5.jpg'); background-size:275%; background-position: 50% 55%"></div>
+                      <a href="contato.html"><div class="circulo"
+                        style="background-image: url('img/icon-4.jpg'); background-size:280%; background-position: 48%"></div></a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <div class="linha">
+          <div class="caixa total" style="height: 20px;" ></div>
+      </div>
+      <!-- FIM DA LINHA -->
+
+
+      <!-- LINHA 1 -->
+
+      <div class="linha car-container luz">
+          <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/1x/modelo12.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/1x/modelo7.png" class="d-block w-100" alt="..." >
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p>.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/1x/modelo13.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="caixa side average centro">
-                <div class="caixa produto-slot"></div>
-            </div>
-            <div class="caixa side short" style="height: 15vw;"></div>
+      </div>
+      <div class="linha">
+        <div class="caixa total average" style="justify-content: center;">
+          <div class="caixa quadrado centro pop">
+            <div class="caixa quadro round-top sombra" 
+            style="background-image: url('img/1x/modelo4.jpg'); 
+            background-size:120%; background-position:40%"></div>
+            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 19,99</div>
+          </div>
+          <div class="caixa quadrado centro pop">
+                        <div class="caixa quadro round-top sombra" 
+            style="background-image: url('img/1x/modelo1.jpg'); 
+            background-size:150%; background-position:40%"></div>
+            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 219,99</div>
+          </div>
+          <div class="caixa quadrado centro pop">
+                        <div class="caixa quadro round-top sombra" 
+            style="background-image: url('img/1x/modelo2.jpg'); 
+            background-size:150%; background-position:40%"></div>
+            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 1,99</div>
+          </div>
+          <div class="caixa quadrado centro pop">
+                        <div class="caixa quadro round-top sombra" 
+            style="background-image: url('img/1x/modelo3.jpg'); 
+            background-size:120%; background-position:40%"></div>
+            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 13,99</div>
+          </div>
+          <div class="caixa quadrado centro pop">
+                        <div class="caixa quadro round-top sombra" 
+            style="background-image: url('img/1x/modelo5.jpg'); 
+            background-size:120%; background-position:40%"></div>
+            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 4,99</div>
+          </div>
+          <div class="caixa quadrado centro pop">
+                        <div class="caixa quadro round-top sombra" 
+            style="background-image: url('img/1x/modelo6.jpg'); 
+            background-size:120%; background-position:40%"></div>
+            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 4.419,99</div>
+          </div>
         </div>
-
-        <!-- COLUNA 1 -->
-        <div class="coluna">
-            <div class="caixa mid short centro">
-                <div class="caixa linha ">
-                    <div class="caixa btn-buscar"></div>
-                    <div class="caixa btn-digitar"></div>
-                </div>
-            </div>
-            <div class="caixa mid average centro">
-                <div class="hub-bar coluna" style="justify-content: space-evenly;">
-                    <div class="caixa tiny-box"></div>
-                    <div class="caixa tiny-box"></div>
-                    <div class="caixa tiny-box"></div>
-                    <div class="caixa tiny-box"></div>
-
-                </div>
-                <div class="hub-screen"></div>
-            </div>
-            <div class="caixa mid short linha centro" style="justify-content:space-evenly; height:15vw;">
-                <div class="caixa produto-slot"></div>
-                <div class="caixa produto-slot"></div>
-                <div class="caixa produto-slot"></div>
-                <div class="caixa produto-slot"></div>
-            </div>
-        </div>
-
-        <!-- COLUNA 2 -->
-        <div class="coluna">
-            <div class="caixa side short"></div>
-            <div class="caixa side average">
-                <div class="caixa coluna centro">
-                    <a href="#" id="login-link"><div class="circulo"></div></a>
-                    <div class="circulo"></div>
-                    <div class="circulo"></div>
-                    <a href="contato.html"><div class="circulo"></div></a>
-                </div>
-                <div class="caixa short average">
-                    <div id="login-box">
-                        <form action="#" method="post">
-                            <label for="username">Usuário:</label>
-                            <input type="text" id="username" name="username" required>
-                    
-                            <label for="password">Senha:</label>
-                            <input type="password" id="password" name="password" required>
-                    
-                            <button type="submit">Login</button>
-                        </form>
-                        <button id="signup-button">Cadastro</button>
-                    </div>
-                </div>
-            </div>
-            <div class="caixa side short " style="height: 15vw">
-            </div>
-        </div>
-
+      </div>
     </div>
-
+    
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
