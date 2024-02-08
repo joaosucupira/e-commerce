@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -12,59 +15,71 @@
 
     <div class="coluna">
 
-      <!-- LINHA 0 -->
-
-      <div class="linha " style="margin-top: 30px;">
-          <!-- COLUNA 0 -->
-
-          <div class="coluna"> 
-              <div class="caixa side mini centro">
-                  <div class="caixa round-left" style="height: 5vw; width:2vw; background-color:rgb(0, 0, 0)"></div>
-                  <div class="caixa logo-store sombra"></div>
-                  <div class="caixa round-right" style="height: 5vw; width:2vw; background-color:rgb(0, 0, 0)"></div>
-              </div>
-          </div>
-
-          <!-- COLUNA 1 -->
-
-          <div class="coluna">
-              <div class="caixa mid mini centro">
-                  <div class="caixa linha ">
-                      <div class="btn-buscar black-out" style="align-items: center; justify-content:center; display:flex">
-                        <div class="legenda">Buscar</div>
-                      </div>
-                      <div class="caixa btn-digitar"></div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- COLUNA 2 -->
-          <div class="coluna">
-              <div class="caixa side mini">
-                  <div class="caixa linha centro">
-                      <a href="#" id="login-link"><div class="circulo" 
-                        style="background-image: url('img/icon-2.png'); background-size:cover"></div></a>
-                      <div class="circulo"
-                        style="background-image: url('img/icon-3.jpg'); background-size:220%; background-position: 50%">
-                      </div>
-                      <div class="circulo"
-                      style="background-image: url('img/icon-5.jpg'); background-size:275%; background-position: 50% 55%"></div>
-                      <a href="contato.html"><div class="circulo"
-                        style="background-image: url('img/icon-4.jpg'); background-size:280%; background-position: 48%"></div></a>
-                  </div>
-              </div>
-          </div>
-          
-      </div>
+      <!-- TOP -->
       <div class="linha">
-          <div class="caixa total" style="height: 20px;" ></div>
+        <div class="caixa total short">
+          <div class="side caixa short direita" style="padding: 1%;">
+            <div class="caixa centro round-left round-right b-box1">
+              <img src="img/store-logo.png" class="img-fluid round-left round-right" alt="SuaLoja" width="90%">
+            </div>
+          </div>
+          <div class="mid caixa short centro" style="justify-content: space-evenly;" id="mid-menu">
+            <div class="bebas-neue-regular">
+              <div class="dropdown">
+                <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-1">
+                  Computadores
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Gamer</a></li>
+                  <li><a class="dropdown-item" href="#">Básicos</a></li>
+                  <li><a class="dropdown-item" href="#">Personalizados</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bebas-neue-regular">
+              <div class="dropdown">
+                <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-2">
+                  Periféricos
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mouse</a></li>
+                  <li><a class="dropdown-item" href="#">Teclado</a></li>
+                  <li><a class="dropdown-item" href="#">Fones</a></li>
+                  <li><a class="dropdown-item" href="#">Combos</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bebas-neue-regular" id="mid-op-3" style="padding: 10px;">Acessórios</div>
+            <div class="bebas-neue-regular" id="mid-op-4" style="padding: 10px;">Peças/Suporte</div>
+          </div>
+          <div class="side caixa short esquerda">
+            <div class="linha centro caixa sombra round-left round-right" style="width:90%">
+              <div class="caixa mini centro mini-icon" >
+                <img src="img/cracha.png" alt="" width="70%" class="img-fluid">
+              </div>
+              <div class="caixa mini centro mini-icon" style=" padding-left:5%">
+                <a href="contato.html"><img src="img/contato.png" alt="" width="90%" class="img-fluid"></a>
+              </div>
+              <div class="caixa mini centro mini-icon" >
+                <img src="img/carrinho.png" alt="" width="90%" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- FIM DA LINHA -->
+      <!-- subtop -->
+      <div class="linha">
+        <div class="caixa total mini" id="subrosa">
+          <div class="side caixa mini direita " style="padding: 1%;"></div>
+          <div class="mid caixa mini centro">
+            <div class="outfit-regular">Inserir aqui texto de boas vindas ou anúncios. 50% de desconto em todas as lojas!</div>
+          </div>
+          <div class="side caixa mini"></div>
+        </div>
+      </div>
 
-
-      <!-- LINHA 1 -->
-
-      <div class="linha car-container luz">
+      <!-- CARROCEU -->
+      <div class="linha car-container luz" style="margin-top:0%;">
           <div id="carouselExampleCaptions" class="carousel slide">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -104,45 +119,136 @@
               </button>
             </div>
       </div>
-      <div class="linha">
-        <div class="caixa total average" style="justify-content: center;">
-          <div class="caixa quadrado centro pop">
-            <div class="caixa quadro round-top sombra" 
-            style="background-image: url('img/1x/modelo4.jpg'); 
-            background-size:120%; background-position:40%"></div>
-            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 19,99</div>
+      <div class="linha caixa total">
+        <div class="side average caixa"></div>
+        <div class="mid average caixa centro">
+          <div class="caixa round-left round-right sombra card-layout">
+            <div class="caixa centro" style="width: 55%;height:100%;">
+              <img src="img/1x/modelo14.png" class=" img-fluid" width="70%" alt="card">
+            </div>
+            <div class="caixa texto-card coluna" >
+              <div class="caixa texto-card upper">Texto maravilhoso sobre esse produto que você precisa.</div>
+              <div class="caixa texto-card lower centro bebas-nue-regular" style="font-size:22px !important"> R$ 19.999,99</div>
+            </div>
           </div>
-          <div class="caixa quadrado centro pop">
-                        <div class="caixa quadro round-top sombra" 
-            style="background-image: url('img/1x/modelo1.jpg'); 
-            background-size:150%; background-position:40%"></div>
-            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 219,99</div>
-          </div>
-          <div class="caixa quadrado centro pop">
-                        <div class="caixa quadro round-top sombra" 
-            style="background-image: url('img/1x/modelo2.jpg'); 
-            background-size:150%; background-position:40%"></div>
-            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 1,99</div>
-          </div>
-          <div class="caixa quadrado centro pop">
-                        <div class="caixa quadro round-top sombra" 
-            style="background-image: url('img/1x/modelo3.jpg'); 
-            background-size:120%; background-position:40%"></div>
-            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 13,99</div>
-          </div>
-          <div class="caixa quadrado centro pop">
-                        <div class="caixa quadro round-top sombra" 
-            style="background-image: url('img/1x/modelo5.jpg'); 
-            background-size:120%; background-position:40%"></div>
-            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 4,99</div>
-          </div>
-          <div class="caixa quadrado centro pop">
-                        <div class="caixa quadro round-top sombra" 
-            style="background-image: url('img/1x/modelo6.jpg'); 
-            background-size:120%; background-position:40%"></div>
-            <div class="caixa retangulo round-bottom sombra legenda black-out">R$ 4.419,99</div>
+          <div class="caixa round-left round-right sombra card-layout">
+            <div class="caixa centro" style="width: 55%;height:100%;">
+
+              <img src="img/1x/modelo8.png" class=" img-fluid" width="70%" alt="card">
+            </div>
+            <div class="caixa texto-card coluna" >
+              <div class="caixa texto-card upper">Texto maravilhoso sobre esse produto que você precisa.</div>
+              <div class="caixa texto-card lower centro bebas-nue-regular" style="font-size:22px !important">R$ 7.709,99</div>
+            </div>
           </div>
         </div>
+        <div class="side average caixa"></div>
+      </div>
+      <div class="linha">
+        <div class="caixa total mini centro bebas-neue-regular" id="bigger">CATEGORIAS DA LOJA</div>
+      </div>
+      <div class="linha caixa total tall centro">
+        <div class="caixa linha total centro" style="height: 420px;">
+          <div class="caixa category-slot centro coluna" >
+            <div class="sombra round-top round-bottom centro category-container">
+              <div class="caixa category-img">
+                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
+              </div>
+            </div>
+            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
+          </div>
+
+          <div class="caixa category-slot centro coluna" >
+             <div class="sombra round-top round-bottom centro category-container">
+              <div class="caixa category-img">
+                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
+              </div>
+            </div>
+            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
+          </div>
+
+          <div class="caixa category-slot centro coluna" >
+             <div class="sombra round-top round-bottom centro category-container">
+              <div class="caixa category-img">
+                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
+              </div>
+            </div>
+            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
+          </div>
+
+          <div class="caixa category-slot centro coluna" >
+             <div class="sombra round-top round-bottom centro category-container">
+              <div class="caixa category-img">
+                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
+              </div>
+            </div>
+            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
+          </div>
+        </div>
+      </div>
+      <div class="linha total tall">
+        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size: 0.9rem;">
+          <b>Produtos e Serviços</b><br>
+          Celular<br>
+          Televisão<br>
+          Tablet <br>
+          Smart watch <br>
+          Informática <br>
+          Câmeras <br>
+          Áudiovisual <br>
+          Suporte técnico <br>
+          
+        </div>
+        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
+          <b>Lojas online</b> <br>
+          Celular<br>
+          Televisão<br>
+          Tablet <br>
+          Smart watch <br>
+          Informática <br>
+          Câmeras <br>
+          Áudiovisual <br>
+          Suporte técnico <br>
+
+        </div>
+        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
+          <b>Suporte</b> <br>
+          Celular<br>
+          Televisão<br>
+          Tablet <br>
+          Smart watch <br>
+          Informática <br>
+          Câmeras <br>
+          Áudiovisual <br>
+          Suporte técnico <br>
+
+        </div>
+        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
+         <b> Quem somos</b><br>
+         Celular<br>
+         Televisão<br>
+         Tablet <br>
+         Smart watch <br>
+         Informática <br>
+         Câmeras <br>
+         Áudiovisual <br>
+         Suporte técnico <br>
+
+        </div>
+        <div class="caixa-real coluna tall outfit-regular texto-footer">
+          <b>Sustentabilidade</b> <br>
+          Celular<br>
+          Televisão<br>
+          Tablet <br>
+          Smart watch <br>
+          Informática <br>
+          Câmeras <br>
+          Áudiovisual <br>
+          Suporte técnico <br>
+
+        </div>
+      </div>
+      </div>
       </div>
     </div>
     

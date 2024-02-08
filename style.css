@@ -1,8 +1,8 @@
 /* CONFIGURAÇÕES BÁSICAS */
 
 body {
-    background: linear-gradient(60deg, #ff4a4a, #ff8d8d, #ff9be9); 
-    /* background-color: #ff0000 !important; */
+    /* background: linear-gradient(60deg, #ff4a4a, #ff8d8d, #ff9be9);  */
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,32 +24,37 @@ body {
     border: 1px transparent black;
 }
 
+.caixa-real {
+    display: flex;
+    border: 1px solid grey;
+}
+
 .total{
     width: 100%;
 }
 
 .mid {
-    width: 50vw ;
+    width: 70% ;
 }
 
 .side {
-    width: 25vw;
+    width: 15%;
 }
 
 .mini {
-    height: 5vw;
+    height: 50px;
 }
 
 .short {
-    height: 10vw;
+    height: 100px;
 }
 
 .average {
-    height: 15vw;
+    height: 300px;
 }
 
 .tall {
-    height: 30vw;
+    height: 500px;
 }
 
 .centro {
@@ -78,78 +83,78 @@ body {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 }
 
+.mini-icon{
+    width: 30%; margin:2.5%;
+}
+
 /* CONFIGURACOES ESPECIFICAS */
 
-.hub-bar {
-    width:7vw; height:18svw; background-color:gray; margin:10px; margin-right:0;
+.category-slot{
+    width:20%; height:400px; margin: 1%;
 }
 
-.hub-screen {
-    width:40vw; height:18svw; background-color:rgb(255, 255, 255); margin: 10px; border-top-right-radius:5vw;border-bottom-right-radius:5vw; margin-left:0;
-    background-image: url('img/1x/modelo9.png') !important;
-    background-size: cover;
+.category-form{
+    display:flex ;height: 50px; width:50%; margin:5%; background-color:rgb(177, 177, 177); color:black; font-size:35px;
+    
 }
 
-.btn-buscar {
-    width:7vw; height:3vw; background-color: rgb(255, 255, 255);
-    border-top-left-radius: 2vw;border-bottom-left-radius: 2vw;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+.category-img{
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    height: 200px; width: 90%; margin:5%;
 }
 
-.btn-digitar {
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-    width:38vw; height:3vw; background-color: white;
-    border-top-right-radius: 2vw;border-bottom-right-radius: 2vw;
+.category-container{
+    display:flex; flex-direction:column; width: 100%; height: 350px;
 }
 
-.logo-store {
-    width: 60%; height: 100%; background-image:url('img/store-logo.png'); background-size:cover;
+#bigger{
+    margin-top: 45px;
+    font-size: 200% !important;
 }
 
-.tiny-box{
-    width: 10vw; height: 4.5vw;
-}
+.basic{
+    color: rgb(255, 255, 255) !important;
+    font-size: 25px !important;
 
-
-
-#login-box {
-
-    display: none;
-    position: fixed;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 999;
-}
-
-#login-box form {
     text-align: center;
 }
 
-#login-box label, #login-box input, #login-box button {
-    display: block;
-    margin-bottom: 10px;
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+  }
+#bigger{
+    font-size: 50px;
+    color:black;
+    font-weight: bolder;
 }
 
+.cute-font-regular {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+  }
+  
 
-#signup-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-
-.tela{
-    background-image: url('img/1x/modelo9.png');
-    
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .sombra {
     border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
 }
 
 .luz {
@@ -158,21 +163,21 @@ body {
 }
 
 .round-top {
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
 }
 
 .round-bottom {
-    border-bottom-left-radius: 2vw;
-    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
 }
 .round-left {
-    border-top-left-radius: 1vw;
-    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
 }
 .round-right {
-    border-top-right-radius: 1vw;
-    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
 }
 
 .car-container {
@@ -184,13 +189,13 @@ body {
 .quadrado {
     display: flex;
     flex-direction: column;
-    width: 15%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 .quadro {
-    width: 12vw;
-    height: 10vw;
+    width: 70%;
+    height: 100%;
 }
 
 .retangulo {
@@ -202,11 +207,6 @@ body {
 
 }
 
-.legenda {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
 
 .black-out {
     background-color: white;
@@ -224,3 +224,139 @@ body {
 .pop:hover{
     transform:scale(1.1);
 }
+
+.texto-card{
+    line-height: 1.25vw;
+    font-family: 'Outfit';
+    text-align: left;
+}
+
+.upper{
+    width: 100% !important;
+}
+
+
+.lower{
+    font-size: 55px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(55, 108, 255);
+    font-weight: bold !important;
+    width: 100% !important;
+}
+
+#subrosa{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.b-box1 {
+    background-color:black; height: 4.5vw; padding-right:20px;
+}
+
+.menu-dropdown{
+    background-color:transparent !important; 
+    color:black !important; 
+}
+
+#mid-op-1:hover{
+    background-color: coral !important;
+    color:white !important;
+}
+#mid-op-2:hover{
+    background-color: rgb(226, 80, 255) !important;
+    color:white !important;
+}
+
+#mid-op-3:hover{
+    background-color: black !important;
+    color:white !important;
+    border-radius: 7vw;
+    
+    
+}
+
+#mid-op-4:hover{
+    background-color: black !important;
+    color:white !important;
+    border-radius: 7vw;
+    
+    
+}
+
+.card-layout{
+    width:45%; height:80%; margin:10px; padding:20px; display:flex; flex-direction:row;
+}
+
+.texto-card{
+    width: 40%; height:100%; color:rgb(110,110,110);
+}
+
+.texto-footer{
+    line-height:1.5rem ;width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 767px) {
+    .car-container{
+        max-height: 30vw;
+        overflow: hidden;
+    }
+
+    .short{
+        height: 50px;
+    }
+
+    .average{
+        height:150px;
+    }
+
+    .mini{
+        height: 25px;
+    }
+
+    #subrosa{
+        font-size: 7px;
+        
+    }
+    
+    .bebas-neue-regular{
+        font-size: 5px;
+    
+    }
+    .dropdown{
+        display: none;
+    }
+
+    #mid-menu{
+        display: none;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 1467px){
+    .average{
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width:1707px){
+    .texto-card{
+        font-size: 15px !important;
+        line-height: 15px !important; 
+        text-align: left;
+
+    }
+}
+
+@media only screen and (max-width:1074px){
+    .texto-card{
+        font-size: 12px !important;
+        line-height: 12px !important; 
+        text-align: left;
+
+    }
+}
+
