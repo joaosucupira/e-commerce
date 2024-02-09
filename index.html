@@ -10,246 +10,230 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body >
-    
-
+<body>
     <div class="coluna">
-
-      <!-- TOP -->
-      <div class="linha">
-        <div class="caixa total short">
-          <div class="side caixa short direita" style="padding: 1%;">
-            <div class="caixa centro round-left round-right b-box1">
-              <img src="img/store-logo.png" class="img-fluid round-left round-right" alt="SuaLoja" width="90%">
+        <!-- TOP -->
+        <div class="linha">
+            <div class="caixa total short" id="top-box">
+                <div class="side caixa short direita" style="padding: 1%;" id="logo-slot">
+                    <div class="caixa centro round-left round-right b-box1">
+                        <img src="img/store-logo.png" class="img-fluid round-left round-right" alt="SuaLoja" width="90%">
+                    </div>
+                </div>
+                <div class="mid caixa short centro" style="justify-content: space-evenly;" id="mid-menu">
+                    <div class="bebas-neue-regular">
+                        <div class="dropdown">
+                            <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-1">Computadores</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Gamer</a></li>
+                                <li><a class="dropdown-item" href="#">Básicos</a></li>
+                                <li><a class="dropdown-item" href="#">Personalizados</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bebas-neue-regular">
+                        <div class="dropdown">
+                            <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-2">Periféricos</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                <li><a class="dropdown-item" href="#">Teclado</a></li>
+                                <li><a class="dropdown-item" href="#">Fones</a></li>
+                                <li><a class="dropdown-item" href="#">Combos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bebas-neue-regular" id="mid-op-3" style="padding: 10px;">Acessórios</div>
+                    <div class="bebas-neue-regular" id="mid-op-4" style="padding: 10px;">Peças/Suporte</div>
+                </div>
+                <div class="side caixa short esquerda">
+                    <div class="linha centro caixa sombra round-left round-right" style="width:90%">
+                        <div class="caixa mini centro mini-icon">
+                            <img src="img/cracha.png" alt="" width="70%" class="img-fluid">
+                        </div>
+                        <div class="caixa mini centro mini-icon" style="padding-left:2%">
+                            <a href="contato.html"><img src="img/contato.png" alt="" width="80%" class="img-fluid"></a>
+                        </div>
+                        <div class="caixa mini centro mini-icon">
+                            <img src="img/icon-1.png" alt="" width="90%" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mid caixa short centro" style="justify-content: space-evenly;" id="mid-menu">
-            <div class="bebas-neue-regular">
-              <div class="dropdown">
-                <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-1">
-                  Computadores
+        </div>
+        <!-- subtop -->
+        <div class="linha">
+            <div class="caixa total mini" id="subrosa">
+                <div class="side caixa mini direita " style="padding: 1%;"></div>
+                <div class="mid caixa mini centro">
+                    <div class="outfit-regular">Inserir aqui texto de boas vindas ou anúncios. 50% de desconto em todas as lojas!</div>
+                </div>
+                <div class="side caixa mini"></div>
+            </div>
+        </div>
+        <!-- CARROCEU -->
+        <div class="linha car-container luz" style="margin-top:0%;">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1x/modelo12.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/1x/modelo7.png" class="d-block w-100" alt="..." >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p>.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/1x/modelo13.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Gamer</a></li>
-                  <li><a class="dropdown-item" href="#">Básicos</a></li>
-                  <li><a class="dropdown-item" href="#">Personalizados</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="bebas-neue-regular">
-              <div class="dropdown">
-                <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-2">
-                  Periféricos
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Mouse</a></li>
-                  <li><a class="dropdown-item" href="#">Teclado</a></li>
-                  <li><a class="dropdown-item" href="#">Fones</a></li>
-                  <li><a class="dropdown-item" href="#">Combos</a></li>
-                </ul>
-              </div>
             </div>
-            <div class="bebas-neue-regular" id="mid-op-3" style="padding: 10px;">Acessórios</div>
-            <div class="bebas-neue-regular" id="mid-op-4" style="padding: 10px;">Peças/Suporte</div>
-          </div>
-          <div class="side caixa short esquerda">
-            <div class="linha centro caixa sombra round-left round-right" style="width:90%">
-              <div class="caixa mini centro mini-icon" >
-                <img src="img/cracha.png" alt="" width="70%" class="img-fluid">
-              </div>
-              <div class="caixa mini centro mini-icon" style=" padding-left:5%">
-                <a href="contato.html"><img src="img/contato.png" alt="" width="90%" class="img-fluid"></a>
-              </div>
-              <div class="caixa mini centro mini-icon" >
-                <img src="img/carrinho.png" alt="" width="90%" class="img-fluid">
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- subtop -->
-      <div class="linha">
-        <div class="caixa total mini" id="subrosa">
-          <div class="side caixa mini direita " style="padding: 1%;"></div>
-          <div class="mid caixa mini centro">
-            <div class="outfit-regular">Inserir aqui texto de boas vindas ou anúncios. 50% de desconto em todas as lojas!</div>
-          </div>
-          <div class="side caixa mini"></div>
-        </div>
-      </div>
-
-      <!-- CARROCEU -->
-      <div class="linha car-container luz" style="margin-top:0%;">
-          <div id="carouselExampleCaptions" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/1x/modelo12.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                    <p></p>
-                  </div>
+        <div class="linha caixa total">
+            <div class="side average caixa"></div>
+            <div class="mid average caixa centro">
+                <div class="caixa round-left round-right sombra card-layout jump-high" style="background-color: white;">
+                    <div class="caixa centro card-img">
+                        <img src="img/1x/modelo21.png" class=" img-fluid" width="100%" alt="card">
+                    </div>
+                    <div class="caixa texto-card coluna" >
+                        <div class="caixa texto-card upper">Texto maravilhoso sobre esse produto que você precisa.</div>
+                        <div class="caixa texto-card lower centro bebas-nue-regular" style="font-size:1.2em !important"> R$ 19.999,99</div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="img/1x/modelo7.png" class="d-block w-100" alt="..." >
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                    <p>.</p>
-                  </div>
+                <div class="caixa round-left round-right sombra card-layout jump-high" style="background-color: white;">
+                    <div class="caixa centro card-img">
+                        <img src="img/1x/modelo15.png" class=" img-fluid" width="100%" alt="card">
+                    </div>
+                    <div class="caixa texto-card coluna" >
+                        <div class="caixa texto-card upper">Texto maravilhoso sobre esse produto que você precisa.</div>
+                        <div class="caixa texto-card lower centro bebas-nue-regular" style="font-size:1.2em !important">R$ 7.709,99</div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="img/1x/modelo13.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                    <p></p>
-                  </div>
+            </div>
+            <div class="side average caixa"></div>
+        </div>
+        <div class="linha">
+            <div class="caixa total mini centro bebas-neue-regular" id="bigger">CATEGORIAS DA LOJA</div>
+        </div>
+        <div class="linha caixa total tall centro">
+            <div class="caixa linha total centro" style="height: 420px;">
+                <div class="caixa category-slot jump centro coluna" >
+                    <div class=" round-top round-bottom centro category-container">
+                        <div class="caixa category-img">
+                            <img src="img/1x/modelo17.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="caixa centro bebas-neue-regular category-form" >Headphones</div>
                 </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-      </div>
-      <div class="linha caixa total">
-        <div class="side average caixa"></div>
-        <div class="mid average caixa centro">
-          <div class="caixa round-left round-right sombra card-layout">
-            <div class="caixa centro" style="width: 55%;height:100%;">
-              <img src="img/1x/modelo14.png" class=" img-fluid" width="70%" alt="card">
-            </div>
-            <div class="caixa texto-card coluna" >
-              <div class="caixa texto-card upper">Texto maravilhoso sobre esse produto que você precisa.</div>
-              <div class="caixa texto-card lower centro bebas-nue-regular" style="font-size:22px !important"> R$ 19.999,99</div>
-            </div>
-          </div>
-          <div class="caixa round-left round-right sombra card-layout">
-            <div class="caixa centro" style="width: 55%;height:100%;">
 
-              <img src="img/1x/modelo8.png" class=" img-fluid" width="70%" alt="card">
+                <div class="caixa category-slot jump centro coluna" >
+                    <div class=" round-top round-bottom centro category-container">
+                        <div class="caixa category-img">
+                            <img src="img/1x/modelo26.png" alt="" style="width:180%; overflow:hidden">
+                        </div>
+                    </div>
+                    <div class="caixa centro bebas-neue-regular category-form" >smart watches</div>
+                </div>
+
+                <div class="caixa category-slot jump centro coluna" >
+                    <div class=" round-top round-bottom centro category-container">
+                        <div class="caixa category-img">
+                            <img src="img/1x/modelo28.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="caixa centro bebas-neue-regular category-form" >notebooks</div>
+                </div>
+
+                <div class="caixa category-slot jump centro coluna" >
+                    <div class=" round-top round-bottom centro category-container">
+                        <div class="caixa category-img">
+                            <img src="img/mouse/m1.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="caixa centro bebas-neue-regular category-form" >ofertas</div>
+                </div>
             </div>
-            <div class="caixa texto-card coluna" >
-              <div class="caixa texto-card upper">Texto maravilhoso sobre esse produto que você precisa.</div>
-              <div class="caixa texto-card lower centro bebas-nue-regular" style="font-size:22px !important">R$ 7.709,99</div>
-            </div>
-          </div>
         </div>
-        <div class="side average caixa"></div>
-      </div>
-      <div class="linha">
-        <div class="caixa total mini centro bebas-neue-regular" id="bigger">CATEGORIAS DA LOJA</div>
-      </div>
-      <div class="linha caixa total tall centro">
-        <div class="caixa linha total centro" style="height: 420px;">
-          <div class="caixa category-slot centro coluna" >
-            <div class="sombra round-top round-bottom centro category-container">
-              <div class="caixa category-img">
-                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
-              </div>
+        <div class="linha total tall">
+            <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size: 0.9rem;">
+                <b>Produtos e Serviços</b><br>
+                Celular<br>
+                Televisão<br>
+                Tablet <br>
+                Smart watch <br>
+                Informática <br>
+                Câmeras <br>
+                Áudiovisual <br>
+                Suporte técnico <br>
             </div>
-            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
-          </div>
-
-          <div class="caixa category-slot centro coluna" >
-             <div class="sombra round-top round-bottom centro category-container">
-              <div class="caixa category-img">
-                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
-              </div>
+            <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
+                <b>Lojas online</b> <br>
+                Celular<br>
+                Televisão<br>
+                Tablet <br>
+                Smart watch <br>
+                Informática <br>
+                Câmeras <br>
+                Áudiovisual <br>
+                Suporte técnico <br>
             </div>
-            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
-          </div>
-
-          <div class="caixa category-slot centro coluna" >
-             <div class="sombra round-top round-bottom centro category-container">
-              <div class="caixa category-img">
-                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
-              </div>
+            <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
+                <b>Suporte</b> <br>
+                Celular<br>
+                Televisão<br>
+                Tablet <br>
+                Smart watch <br>
+                Informática <br>
+                Câmeras <br>
+                Áudiovisual <br>
+                Suporte técnico <br>
             </div>
-            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
-          </div>
-
-          <div class="caixa category-slot centro coluna" >
-             <div class="sombra round-top round-bottom centro category-container">
-              <div class="caixa category-img">
-                <img src="img/1x/modelo5.jpg" alt="" style="width:100%">
-              </div>
+            <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
+                <b> Quem somos</b><br>
+                Celular<br>
+                Televisão<br>
+                Tablet <br>
+                Smart watch <br>
+                Informática <br>
+                Câmeras <br>
+                Áudiovisual <br>
+                Suporte técnico <br>
             </div>
-            <div class="caixa centro bebas-neue-regular category-form" >relógios</div>
-          </div>
+            <div class="caixa-real coluna tall outfit-regular texto-footer">
+                <b>Sustentabilidade</b> <br>
+                Celular<br>
+                Televisão<br>
+                Tablet <br>
+                Smart watch <br>
+                Informática <br>
+                Câmeras <br>
+                Áudiovisual <br>
+                Suporte técnico <br>
+            </div>
         </div>
-      </div>
-      <div class="linha total tall">
-        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size: 0.9rem;">
-          <b>Produtos e Serviços</b><br>
-          Celular<br>
-          Televisão<br>
-          Tablet <br>
-          Smart watch <br>
-          Informática <br>
-          Câmeras <br>
-          Áudiovisual <br>
-          Suporte técnico <br>
-          
-        </div>
-        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
-          <b>Lojas online</b> <br>
-          Celular<br>
-          Televisão<br>
-          Tablet <br>
-          Smart watch <br>
-          Informática <br>
-          Câmeras <br>
-          Áudiovisual <br>
-          Suporte técnico <br>
-
-        </div>
-        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
-          <b>Suporte</b> <br>
-          Celular<br>
-          Televisão<br>
-          Tablet <br>
-          Smart watch <br>
-          Informática <br>
-          Câmeras <br>
-          Áudiovisual <br>
-          Suporte técnico <br>
-
-        </div>
-        <div class="caixa-real coluna tall outfit-regular texto-footer" style="width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;">
-         <b> Quem somos</b><br>
-         Celular<br>
-         Televisão<br>
-         Tablet <br>
-         Smart watch <br>
-         Informática <br>
-         Câmeras <br>
-         Áudiovisual <br>
-         Suporte técnico <br>
-
-        </div>
-        <div class="caixa-real coluna tall outfit-regular texto-footer">
-          <b>Sustentabilidade</b> <br>
-          Celular<br>
-          Televisão<br>
-          Tablet <br>
-          Smart watch <br>
-          Informática <br>
-          Câmeras <br>
-          Áudiovisual <br>
-          Suporte técnico <br>
-
-        </div>
-      </div>
-      </div>
-      </div>
     </div>
     
     <script src="script.js"></script>

@@ -84,7 +84,7 @@ body {
 }
 
 .mini-icon{
-    width: 30%; margin:2.5%;
+    width: 30%; margin:2.5%; height: auto;
 }
 
 /* CONFIGURACOES ESPECIFICAS */
@@ -93,15 +93,25 @@ body {
     width:20%; height:400px; margin: 1%;
 }
 
+
+.jump {transition: transform 0.3s ease; }
+.jump:hover {transform: translateY(-10px);}
+.jump-high {transition: transform 0.3s ease; }
+.jump-high:hover {transform: translateY(-30px);}
+
+
 .category-form{
     display:flex ;height: 50px; width:50%; margin:5%; background-color:rgb(177, 177, 177); color:black; font-size:35px;
     
 }
 
 .category-img{
-    border: 4px solid rgba(0, 0, 0, 0.5);
-    height: 200px; width: 90%; margin:5%;
+    border-radius: 5vw;
+    overflow: hidden;
+    height: 300px; width: 90%; margin:5%;
 }
+
+.category-img:hover{   border: 4px solid rgba(0, 0, 0, 0.25);}
 
 .category-container{
     display:flex; flex-direction:column; width: 100%; height: 350px;
@@ -254,8 +264,9 @@ body {
 }
 
 .menu-dropdown{
-    background-color:transparent !important; 
+    background-color:white !important; 
     color:black !important; 
+    font-size: 0.7rem !important;
 }
 
 #mid-op-1:hover{
@@ -267,20 +278,26 @@ body {
     color:white !important;
 }
 
-#mid-op-3:hover{
-    background-color: black !important;
-    color:white !important;
-    border-radius: 7vw;
-    
-    
+#mid-op-3, #mid-op-4{
+    background-color: white !important;
+    border-radius: 5vw;
 }
 
-#mid-op-4:hover{
+#mid-op-3:hover, #mid-op-4:hover{
     background-color: black !important;
     color:white !important;
     border-radius: 7vw;
-    
-    
+    cursor:pointer;
+}
+
+
+
+#help-bar{
+    width:90%; background-color:white; border-radius:5vw;
+}
+
+.mini-icon:hover{
+    cursor: pointer;
 }
 
 .card-layout{
@@ -295,13 +312,32 @@ body {
     line-height:1.5rem ;width: 20%; padding:1.5rem; justify-content:baseline; align-items:start; font-size:  0.9rem;
 }
 
+.card-img{
+    width: 55% !important;
+    height:100% !important;
+    overflow:hidden !important; 
+    margin-right:15px !important;
+}
+
+.page-title{
+    background-color: rgb(57, 120, 255); margin:1%; width:fit-content; 
+    padding:2.5%; 
+    color:rgb(186, 255, 232);
+    border-radius: 5vw;
+}
+
+.dot{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5vw;
+    background-color: white;
+    margin: 10px;
+
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 767px) {
-    .car-container{
-        max-height: 30vw;
-        overflow: hidden;
-    }
 
     .short{
         height: 50px;
@@ -332,6 +368,10 @@ body {
         display: none;
     }
 
+    .car-container{
+        max-height: 30vw;
+        overflow: hidden;
+    }
 
     
 }
@@ -348,6 +388,17 @@ body {
         line-height: 15px !important; 
         text-align: left;
 
+    }
+    .outfit-regular {
+        font-size: 15px !important;
+    }
+
+    .bebas-neue-regular {
+        font-size: 16px !important;
+    }
+
+    .category-container {
+        height: auto !important;
     }
 }
 
