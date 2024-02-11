@@ -6,3 +6,12 @@
 #caixa-form{
     height: fit-content;
 }
+
+body{
+    background-color: rgb(77, 77, 255) !important;
+}
+
+.contact-form{
+    background: linear-gradient(180deg, rgb(190, 190, 255), rgb(138, 138, 255));
+    border-radius: 5vw;
+}
