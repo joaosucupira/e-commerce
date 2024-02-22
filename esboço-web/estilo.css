@@ -1,0 +1,37 @@
+/* GERAL */
+
+.row{margin: 20px}
+.centro {display: flex; justify-content: center; align-items: center;}
+.topo {display: flex; justify-content: baseline; align-items: center;}
+.azul {background-color: rgb(212, 212, 212); border: 1px solid black;}
+.container{border: 1px transparent rgb(0, 0, 0); color:rgb(0, 0, 0)}
+
+.card-img{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    overflow: hidden; 
+}
+
+a{ color: black !important;}
+body{background-color: rgb(68, 81, 130);}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 767px) {
+    .logo-img{
+        width: 70%;
+    }
+    .nav-item{
+        font-size: .75em;
+    }
+
+    .card-layout{
+        font-size: .7em;
+    }
+
+    .card-img{
+        margin-bottom: 5%;
+    }
+
+}

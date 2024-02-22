@@ -1,0 +1,48 @@
+
+
+.card-layout{
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    background-color: azure;
+    margin: 1%;
+}
+
+.card-layout:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+}
+
+.jump {
+    transition: transform 0.3s ease;
+}
+
+.jump:hover {
+    transform: translateY(-20px);
+}
+
+
+.logo-img {
+    margin: 5%;
+}
+
+.car-container{
+
+    object-fit: contain;
+    overflow: hidden;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantém a proporção da imagem e ajusta o tamanho para caber dentro do contêiner */
+}
+
+@media only screen and (max-width: 767px){
+
+    /* .car-container{
+       height: 40vw;
+    }
+    .carousel-item {
+        height: 40vw;
+    } */
+}

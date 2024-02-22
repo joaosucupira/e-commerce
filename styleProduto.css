@@ -1,0 +1,19 @@
+#linha-1 {
+    height: 600px;
+}
+
+.container {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.produto {
+    flex: 1 1 45%;
+    padding: 20px;
+    background-color: #6e6e6e;
+    border-radius: 10px;
+    font-size: 16px;
+}
