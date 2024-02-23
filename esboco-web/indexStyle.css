@@ -62,6 +62,27 @@
     height: 100%;
 }
 
+.nav-link {
+    background-color: transparent !important;
+    color: aliceblue !important;
+}
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0 !important;
+    background-color: #0000ff !important;
+}
+
+.form-control {
+    background-color: rgb(255, 255, 255) !important;
+}
+.form-control:click{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+
 /* .car-top-left { top: 0; left: 0; transform: translate(250px, 50px); text-align: left !important;}
 
 .car-top-right { top: 0; right: 0; transform: translate(-50px, 50px); }

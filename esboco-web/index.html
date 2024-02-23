@@ -11,46 +11,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    
 </head>
 <body>
     <!-- TOPO -->
     <div class="row">
         <div class="col-md-2 centro">
-            <img class="img-fluid logo-img" src="img\store-logo.png" alt="logo">
+            <img class="img-fluid logo-img" src="img\store-logo.png" alt="logo" style="border-radius: 10px;">
         </div>
-        <div class="col-md-8 centro">
-            <ul class="nav nav-tabs">
+        <div class="col-md-10 centro" style="justify-content: left;">
+            <ul class="nav nav-tabs" style="align-items: center;">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                      <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <nav class="navbar bg-body-tertiary" >
+                    <div class="container-fluid" >
+                      <form class="d-flex" role="search" >
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-bar">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                       </form>
                     </div>
-                  </nav>
+                </nav>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Serviços</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Loja online</a></li>
+                      <li><a class="dropdown-item" href="#">Telefonia</a></li>
+                      <li><a class="dropdown-item" href="#">Informática</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                      <li><a class="dropdown-item" href="#">Periféricos</a></li>
+                      <li><a class="dropdown-item" href="#">Consoles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Active</a> -->
+                    <a class="nav-link" href="#">Minha conta</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrinho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suporte</a>
+                </li>
+                
+
             </ul>
         </div>
-        <div class="col-md-2 ">Conteúdo da coluna 3</div>
+        <!-- <div class="col-md-2 "></div> -->
     </div>
+
+
+    <div class="container" style="background-color:antiquewhite">Produtos aaaaaaaaaaaaa</div>
 
     <!-- CARROSSEL desktop -->
     <div class="container-fluid" style="padding: 0;">
@@ -63,16 +79,33 @@
                         <div class="carousel-text-container" style="position: relative;">
                             <div class="car-text">
                                 <h1>Bom dia!</h1>
-                                <p>Como vai você?</p>
+                                <p style="background-color: black; color:rgb(255, 82, 82)">Como vai você?</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/1x/modelo12.png" class="d-block w-100" alt="sualoja.com">
+                    <div class="carousel-text-container" style="width: 100%; justify-content:end;">
+                        <div class="carousel-text-container" style="position: relative;">
+                            <div class="car-text" style="text-align: right;">
+                                <h1>Cliente premium?</h1>
+                                <p style="background-color: black; color:rgb(82, 120, 255); text-align:center">Confira suas vantages</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/1x/modelo7.png" class="d-block w-100" alt="sualoja.com">
+                    <div class="carousel-text-container" style="width: 100%; justify-content:start;">
+                        <div class="carousel-text-container" style="position: relative;">
+                            <div class="car-text" style="text-align: right;">
+                                <h1>Oi!</h1>
+                                <p style="background-color: black; color:rgb(243, 255, 82); text-align:center; padding:1%">Já comprou hoje?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -124,7 +157,7 @@
 
     </div>
 
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
