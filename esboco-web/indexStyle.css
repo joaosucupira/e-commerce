@@ -62,6 +62,14 @@
     height: 100%;
 }
 
+.upper-car{
+    background-color:antiquewhite; color:black !important; text-align:center; border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+.badge{
+    margin: 5%;
+}
+
 .nav-link {
     background-color: transparent !important;
     color: aliceblue !important;
@@ -81,15 +89,31 @@
     color: white !important;
 }
 
+.typing-container {
+    padding-top: 1%;
+     overflow: hidden; /* Oculta o texto que estiver fora do contêiner */
+     border-bottom: 1px transparent #000; /* Adiciona uma linha horizontal */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+     width: 80%; /* Define a largura do contêiner */
+}
 
+/* Estilo do texto */
+#typing-text {
+    /* font-family: ; */
+    font-size: 1.2rem !important;
+    letter-spacing: 5px;
+    line-height: -6px;
+  display: inline-block; /* Torna o texto um bloco inline para ocupar a largura do contêiner */
+  white-space: nowrap; /* Impede quebrar o texto em várias linhas */
+  animation: typing 5s steps(40, end); /* Aplica a animação de digitação */
+}
 
-/* .car-top-left { top: 0; left: 0; transform: translate(250px, 50px); text-align: left !important;}
+/* Animação de digitação */
+@keyframes typing {
+  from { width: 0; } /* Inicia o texto com largura 0 */
+  to { width: 100%; } /* Aumenta a largura até 100% */
+}
 
-.car-top-right { top: 0; right: 0; transform: translate(-50px, 50px); }
-
-.car-bottom-left { bottom: 0; left: 0; transform: translate(50px, -50px); }
-
-.car-bottom-right { bottom: 0; right: 0; transform:translate(-50px, -50px); } */
 
 @media only screen and (max-width: 767px){
 
@@ -108,4 +132,15 @@
     .car-text{
         display: none;
     }
+
+    .typing-container {
+        display: none;
+    }
 }   
+
+@media only screen and (min-width: 1024px) {
+    .title{
+        font-size: 1rem !important;
+    }
+  }
+  
