@@ -1,14 +1,17 @@
 
 
 .card-layout{
-    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 12px 10px rgba(0,0,0,0.5);
     border-radius: 10px;
-    background-color: azure;
     margin: 1%;
+    background-color: rgb(15, 12, 48);
+    background: linear-gradient(0deg, #000002, #000822);
+    border: 2px solid rgba(142, 246, 255, 0.3);
 }
 
 .card-layout:hover{
-    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    box-shadow: 0 17px 10px rgba(0,0,0,0.5);
+    border: 3px solid rgba(48, 208, 223, 0.7);
 }
 
 .jump {
@@ -31,11 +34,41 @@
     height: auto;
 }
 
+
 .carousel-item img {
-    width: 100%;
+    width: 100% ;
     height: 100%;
-    object-fit: contain; /* Mantém a proporção da imagem e ajusta o tamanho para caber dentro do contêiner */
+    object-fit: contain;
+    position: relative;
 }
+
+.car-text {
+    /* font-size: 1.6rem; */
+    display: flexbox;
+    position: absolute;
+    color: black;
+    text-align: center;
+}
+
+
+.carousel-text-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+/* .car-top-left { top: 0; left: 0; transform: translate(250px, 50px); text-align: left !important;}
+
+.car-top-right { top: 0; right: 0; transform: translate(-50px, 50px); }
+
+.car-bottom-left { bottom: 0; left: 0; transform: translate(50px, -50px); }
+
+.car-bottom-right { bottom: 0; right: 0; transform:translate(-50px, -50px); } */
 
 @media only screen and (max-width: 767px){
 
@@ -45,4 +78,13 @@
     .carousel-item {
         height: 40vw;
     } */
-}
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .car-text{
+        display: none;
+    }
+}   
