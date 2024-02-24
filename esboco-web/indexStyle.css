@@ -43,13 +43,14 @@
 }
 
 .car-text {
-    /* font-size: 1.6rem; */
-    display: flexbox;
     position: absolute;
     color: black;
     text-align: center;
 }
 
+.car-text:hover {
+    cursor: pointer;
+}
 
 .carousel-text-container {
     position: absolute;
@@ -58,9 +59,48 @@
     justify-content: center;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 70%;
     height: 100%;
+
 }
+
+
+.special-text {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0); color: #ffffff;
+    font-size: .95vw !important;
+    padding: 1%;
+    margin-top: 40px ;
+    margin-bottom: 40px ;
+    font-family: 'outfit';
+}
+
+
+
+.special-text h1{
+    font-family: 'bebas neue';
+    font-size: 2vw;
+}
+
+.special-text button{
+    border-radius: 50px;
+    border: none;
+    padding: 3%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+   
+}
+.special-button:hover {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
 
 .upper-car{
     background-color:antiquewhite; color:black !important; text-align:center; border-top-left-radius: 10px; border-top-right-radius: 10px;
@@ -141,6 +181,17 @@
 @media only screen and (min-width: 1024px) {
     .title{
         font-size: 1rem !important;
+        
     }
+
+    .special-text{
+        font-size: 1rem;
+    }
+
+    .special-text img{
+        width: 60% !important;
+    }
+
+
   }
   
