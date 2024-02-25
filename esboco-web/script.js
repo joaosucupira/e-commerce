@@ -18,3 +18,4 @@ document.addEventListener("DOMContentLoaded", function() {
   const typingElement = document.getElementById("typing-text");
   typeWriter(text, 0, typingElement);
 });
+

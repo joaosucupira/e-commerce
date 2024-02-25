@@ -7,18 +7,33 @@
 .container{color:rgb(0, 0, 0); color:rgb(184, 252, 254)}
 
 .dot {
-    width: 1rem;
-    height: 1rem;
+    width: 2vw;
+    height: 2vw;
     border-radius: 5vw;
     background-color: white;
     margin: 10px;
 }
 
 .title{
-    justify-content:center !important; font-size: 3rem !important;  padding:1% !important;
+    justify-content:center !important; font-size: 3vw !important;  padding:1% !important; color: white;
 }
 .title-container{
-    display: flex; flex-direction:row; align-items:center; border: 5px solid white; border-radius:100px; width:40%; justify-content:center;
+    display: flex; 
+    flex-direction:row; 
+    align-items:center; 
+    border: .05vw solid rgba(0, 153, 255, 0.6) !important; 
+    box-shadow: 0 0 10px rgba(0, 153, 255,0.5);
+    border-radius:100px; 
+    width: 30%;
+    padding: 1%;
+    padding-left: 2%; 
+    padding-right: 2%; 
+    justify-content:center;
+}
+
+.sombra{
+    border: .5vw solid rgba(0, 0, 0, 0.6) !important; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
 }
 
 .card-img{
@@ -30,6 +45,9 @@
     margin-bottom: 5%;
     border: 2px solid rgb(0, 0, 0)
 }
+
+
+
 
 a{ color: black !important;}
 body{background-color: rgb(10, 8, 32); color:wheat}
@@ -57,9 +75,25 @@ body{background-color: rgb(10, 8, 32); color:wheat}
   font-style: normal;
 }
 
+.circle {
+    object-fit: cover;
+    overflow: hidden;
+    width: 11vw !important;
+    height: 11vw !important;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px;
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 767px) {
+
+    .circle {
+        width: calc(50% - 20px) !important; /* 50% da largura da tela com margens */
+        height: 20% !important; /* Ajustar a altura automaticamente para manter a proporção */
+    }
+
     .logo-img{
         width: 70%;
     }
@@ -74,18 +108,19 @@ body{background-color: rgb(10, 8, 32); color:wheat}
     .card-img{
         margin-bottom: 5%;
     }
-    .title{
-        font-size: 1.2rem !important ;
-    }
+
     .title-container {
         width: 100%;
+    }
+
+    .title {
+        font-size: 6vw !important;
     }
 
 }
 
 @media only screen and (min-width: 1024px) {
-    .title{
-        font-size: 2.3rem !important ;
-    }
+
   }
   
+
