@@ -75,12 +75,16 @@ body{background-color: rgb(10, 8, 32); color:wheat}
   font-style: normal;
 }
 
+
+.circle-container {display:flex; align-items:center; flex-direction:column}
+.circle-text { font-size: 1.5vw !important; color: white;}
+
 .circle {
     object-fit: cover;
     overflow: hidden;
     width: 11vw !important;
     height: 11vw !important;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     margin: 10px;
 }
@@ -90,8 +94,18 @@ body{background-color: rgb(10, 8, 32); color:wheat}
 @media only screen and (max-width: 767px) {
 
     .circle {
-        width: calc(50% - 20px) !important; /* 50% da largura da tela com margens */
-        height: 20% !important; /* Ajustar a altura automaticamente para manter a proporção */
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .circle-container {
+        width: calc(50% - 20px) !important;
+        height: 30% !important;
+    
+    }
+
+    .circle-text {
+        font-size: 3vw !important;
     }
 
     .logo-img{
