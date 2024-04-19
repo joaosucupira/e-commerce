@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styleCarrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="coluna" >
+
+        <div class="linha" >
+            <div class="caixa total short" id="top-box">
+                <div class="side caixa short direita" style="padding: 1%;" id="logo-slot">
+                    <div class="caixa round-left round-right b-box1 centro" style="padding-left: 8px;">
+                        <a href="index.html"><img src="img/store-logo.png" class="img-fluid round-left round-right" alt="SuaLoja" width="90%"></a>
+                      </div>
+                </div>
+                <div class="mid caixa short centro" style="justify-content: space-evenly;" id="mid-menu">
+                    <div class="bebas-neue-regular">
+                        <div class="dropdown">
+                            <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-1">Computadores</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Gamer</a></li>
+                                <li><a class="dropdown-item" href="#">Básicos</a></li>
+                                <li><a class="dropdown-item" href="#">Personalizados</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bebas-neue-regular">
+                        <div class="dropdown">
+                            <button class="menu-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="mid-op-2">Periféricos</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                <li><a class="dropdown-item" href="#">Teclado</a></li>
+                                <li><a class="dropdown-item" href="#">Fones</a></li>
+                                <li><a class="dropdown-item" href="#">Combos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bebas-neue-regular" id="mid-op-3" style="padding: 10px;">Acessórios</div>
+                    <div class="bebas-neue-regular" id="mid-op-4" style="padding: 10px;">Peças/Suporte</div>
+                </div>
+                <div class="side caixa short esquerda">
+                    <div class="linha caixa sombra" id="help-bar">
+                        <div class="caixa mini-icon centro">
+                            <a href="login.html">
+                                <img src="img/cracha.png" alt="icon" width="90%">
+                            </a>
+                        </div>
+                        <div class="caixa mini-icon centro">
+                            <a href="contato.html">
+                                <img src="img/contato.png" alt="icon" width="90%">
+                            </a>
+                        </div>
+                        <div class="caixa mini-icon centro">
+                            <a href="carrinho.html">
+                                <img src="img/icon-1.png" alt="icon" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="container">
+                <div class="carrinho">
+                    <h2>Itens no Carrinho</h2>
+                    <div class="itens">
+                        <div class="item">
+                            <img src="img/mouse/m2.jpg" alt="Produto 1">
+                            <div class="info">
+                                <h3>Produto 1</h3>
+                                <p>Preço: R$ 50,00</p>
+                                <p>Quantidade: 1</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/watch/w1.jpg" alt="Produto 2">
+                            <div class="info">
+                                <h3>Produto 2</h3>
+                                <p>Preço: R$ 30,00</p>
+                                <p>Quantidade: 2</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/console/c6.jpg" alt="Produto 3">
+                            <div class="info">
+                                <h3>Produto 3</h3>
+                                <p>Preço: R$ 20,00</p>
+                                <p>Quantidade: 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h3>Total: R$ 100,00</h3>
+                        <button>Finalizar Compra</button>
+                    </div>
+                </div>
+                <div class="relacionados">
+                    <h2>Produtos Relacionados</h2>
+                    <div class="coluna">
+                        <div class="produtos">
+                            <div class="produto">
+                                <div class="produto-img" style="background-image: url('img/console/c3.jpg');"></div>
+                                <p>Produto Relacionado 1</p>
+                            </div>
+                            <div class="produto">
+                                <div class="produto-img" style="background-image: url('img/console/c1.jpg');"></div>
+                                <p>Produto Relacionado 2</p>
+                            </div>
+                            <div class="produto">
+                                <div class="produto-img" style="background-image: url('img/parts/p2.jpg');"></div>
+                                <p>Produto Relacionado 3</p>
+                        </div>
+
+                        </div>
+                        <div class="produtos">
+                            <div class="produto">
+                                <div class="produto-img" style="background-image: url('img/console/c3.jpg');"></div>
+                                <p>Produto Relacionado 1</p>
+                            </div>
+                            <div class="produto">
+                                <div class="produto-img" style="background-image: url('img/console/c1.jpg');"></div>
+                                <p>Produto Relacionado 2</p>
+                            </div>
+                            <div class="produto">
+                                <div class="produto-img" style="background-image: url('img/parts/p2.jpg');"></div>
+                                <p>Produto Relacionado 3</p>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
